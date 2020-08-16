@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="551.0" prefWidth="598.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CalculatorController">
+   <children>
+      <GridPane layoutY="139.0" prefHeight="407.0" prefWidth="598.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="114.2" minHeight="10.0" prefHeight="93.40001220703125" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="156.0000030517578" minHeight="10.0" prefHeight="101.59998779296875" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="223.19996337890626" minHeight="6.399999999999999" prefHeight="98.20001220703125" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="248.60001220703126" minHeight="10.0" prefHeight="99.79998779296875" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btn1" mnemonicParsing="false" onAction="#btnaction" prefHeight="96.0" prefWidth="162.0" text="1">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn2" mnemonicParsing="false" onAction="#btnaction" prefHeight="96.0" prefWidth="158.0" text="2" GridPane.columnIndex="1">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn3" mnemonicParsing="false" onAction="#btnaction" prefHeight="126.0" prefWidth="178.0" text="3" GridPane.columnIndex="2">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnminus" mnemonicParsing="false" onAction="#btnaction" prefHeight="108.0" prefWidth="150.0" text="-" GridPane.columnIndex="3">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn4" mnemonicParsing="false" onAction="#btnaction" prefHeight="123.0" prefWidth="165.0" text="4" GridPane.rowIndex="1">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn5" mnemonicParsing="false" onAction="#btnaction" prefHeight="110.0" prefWidth="159.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn6" mnemonicParsing="false" onAction="#btnaction" prefHeight="116.0" prefWidth="161.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnplus" mnemonicParsing="false" onAction="#btnaction" prefHeight="104.0" prefWidth="173.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn7" mnemonicParsing="false" onAction="#btnaction" prefHeight="115.0" prefWidth="162.0" text="7" GridPane.rowIndex="2">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn8" mnemonicParsing="false" onAction="#btnaction" prefHeight="125.0" prefWidth="153.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn9" mnemonicParsing="false" onAction="#btnaction" prefHeight="118.0" prefWidth="174.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnmultiply" mnemonicParsing="false" onAction="#btnaction" prefHeight="126.0" prefWidth="182.0" text="x" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn0" mnemonicParsing="false" onAction="#btnaction" prefHeight="135.0" prefWidth="160.0" text="0" GridPane.rowIndex="3">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnequal" mnemonicParsing="false" onAction="#btnaction" prefHeight="102.0" prefWidth="160.0" text="=" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnclear" mnemonicParsing="false" onAction="#btnaction" prefHeight="107.0" prefWidth="163.0" text="CL" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btndivide" mnemonicParsing="false" onAction="#btnaction" prefHeight="119.0" prefWidth="170.0" text="/" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+      <TextField fx:id="output" alignment="CENTER_RIGHT" editable="false" layoutX="-1.0" prefHeight="141.0" prefWidth="598.0">
+         <font>
+            <Font size="50.0" />
+         </font></TextField>
+   </children>
+</AnchorPane>
